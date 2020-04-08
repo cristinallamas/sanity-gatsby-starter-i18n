@@ -1,7 +1,7 @@
 export default {
-  name: "siteSettings",
+  name: "siteNavigation",
   type: "document",
-  title: "Site Settings",
+  title: "Site Navigation",
   __experimental_actions: [
     // 'create',
     "update",
@@ -11,12 +11,12 @@ export default {
   fields: [
     {
       name: "title",
-      type: "localeString",
+      type: "string",
       title: "Title"
     },
     {
       name: "description",
-      type: "localeBioPortableText",
+      type: "text",
       title: "Description",
       description: "Describe your portfolio for search engines and social media."
     },
@@ -30,10 +30,5 @@ export default {
         layout: "tags"
       }
     }
-  ],
-  preview: {
-    select: {
-      title: "title.en"
-    }
-  }
+  ]
 };

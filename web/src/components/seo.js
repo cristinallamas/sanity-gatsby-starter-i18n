@@ -85,8 +85,14 @@ export default SEO;
 const detailsQuery = graphql`
   query DefaultSEOQuery {
     site: sanitySiteSettings(_id: { eq: "siteSettings" }) {
-      title
-      description
+      title {
+        en
+        es
+      }
+      description {
+        en
+        es
+      }
       keywords
     }
   }

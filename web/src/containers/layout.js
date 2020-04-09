@@ -34,7 +34,7 @@ function LayoutContainer(props) {
           <Layout
             {...props}
             showNav={showNav}
-            siteTitle={data.site.title}
+            siteTitle={data.site.title.en}
             onHideNav={handleHideNav}
             onShowNav={handleShowNav}
           />

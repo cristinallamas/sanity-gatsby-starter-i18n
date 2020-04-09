@@ -16,7 +16,7 @@ export default {
     },
     {
       name: "description",
-      type: "localeBioPortableText",
+      type: "bioPortableText",
       title: "Description",
       description: "Describe your portfolio for search engines and social media."
     },

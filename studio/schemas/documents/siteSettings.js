@@ -1,39 +1,39 @@
 export default {
-  name: "siteSettings",
-  type: "document",
-  title: "Site Settings",
+  name: 'siteSettings',
+  type: 'document',
+  title: 'Site Settings',
   __experimental_actions: [
     // 'create',
-    "update",
+    'update',
     // 'delete',
-    "publish"
+    'publish'
   ],
   fields: [
     {
-      name: "title",
-      type: "localeString",
-      title: "Title"
+      name: 'title',
+      type: 'localeString',
+      title: 'Title'
     },
     {
-      name: "description",
-      type: "bioPortableText",
-      title: "Description",
-      description: "Describe your portfolio for search engines and social media."
+      name: 'description',
+      type: 'text',
+      title: 'Description',
+      description: 'Describe your portfolio for search engines and social media.'
     },
     {
-      name: "keywords",
-      type: "array",
-      title: "Keywords",
-      description: "Add keywords that describes your portfolio.",
-      of: [{ type: "string" }],
+      name: 'keywords',
+      type: 'array',
+      title: 'Keywords',
+      description: 'Add keywords that describes your portfolio.',
+      of: [{type: 'string'}],
       options: {
-        layout: "tags"
+        layout: 'tags'
       }
     }
   ],
   preview: {
     select: {
-      title: "title.en"
+      title: 'title.en'
     }
   }
-};
+}
